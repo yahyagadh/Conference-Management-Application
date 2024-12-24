@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="562.0" prefWidth="991.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SoumissionarticlesController">
+   <children>
+      <AnchorPane layoutX="43.0" layoutY="59.0" prefHeight="424.0" prefWidth="372.0" style="-fx-background-color: #B71C1C;">
+         <children>
+            <Label layoutX="36.0" layoutY="103.0" prefHeight="18.0" prefWidth="84.0" text="Titre Article" />
+            <Label layoutX="34.0" layoutY="168.0" text="Nom Auteur" />
+            <Label layoutX="33.0" layoutY="235.0" text="Mail Auteurs" />
+            <Label layoutX="36.0" layoutY="289.0" text="Piece jointe" />
+            <TextField fx:id="auteur" layoutX="128.0" layoutY="100.0" />
+            <TextField fx:id="mail" layoutX="128.0" layoutY="164.0" />
+            <TextField fx:id="inst" layoutX="128.0" layoutY="231.0" />
+            <Hyperlink fx:id="lien" layoutX="173.0" layoutY="295.0" text="Hyperlink" />
+            <Button fx:id="soumission" layoutX="160.0" layoutY="343.0" mnemonicParsing="false" onAction="#soumissionarticle" prefHeight="37.0" prefWidth="84.0" text="soumettre" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="443.0" layoutY="72.0" prefHeight="398.0" prefWidth="521.0" style="-fx-background-color: #B71C1C;">
+         <children>
+            <TableView fx:id="tableview5" layoutX="22.0" layoutY="33.0" prefHeight="330.0" prefWidth="475.0">
+               <columns>
+                  <TableColumn fx:id="instt" prefWidth="75.0" text="inst" />
+                  <TableColumn fx:id="titre1" prefWidth="75.0" text="titre" />
+                  <TableColumn fx:id="lieu" prefWidth="75.0" text="lieu" />
+                  <TableColumn fx:id="topics" prefWidth="75.0" text="topics" />
+                  <TableColumn fx:id="soum" prefWidth="75.0" text="datesoum" />
+                  <TableColumn fx:id="mt" prefWidth="108.800048828125" text="montant" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="29.0" layoutY="23.0" text="soumettre un article" />
+   </children>
+</AnchorPane>

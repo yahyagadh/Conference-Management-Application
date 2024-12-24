@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="643.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InscritparticipantController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="2.0" layoutY="13.0" prefHeight="616.0" prefWidth="1022.0">
+         <children>
+            <AnchorPane layoutX="27.0" layoutY="81.0" prefHeight="504.0" prefWidth="967.0" style="-fx-background-color: #FDEDEC;">
+               <children>
+                  <TextField fx:id="nom" layoutX="177.0" layoutY="65.0" />
+                  <TextField fx:id="mail" layoutX="177.0" layoutY="117.0" />
+                  <TextField fx:id="pwrd" layoutX="177.0" layoutY="178.0" />
+                  <Button fx:id="innscrir" layoutX="159.0" layoutY="420.0" mnemonicParsing="false" onAction="#inscription" prefHeight="34.0" prefWidth="62.0" style="-fx-background-color: #EF5350;" text="s'inscrir" />
+                  <RadioButton fx:id="bonDeCommandeRadioButton" layoutX="124.0" layoutY="323.0" mnemonicParsing="false" text="bon de commande" />
+                  <RadioButton fx:id="especeRadioButton" layoutX="270.0" layoutY="327.0" mnemonicParsing="false" text="Espéce" />
+                  <RadioButton fx:id="virementRadioButton" layoutX="118.0" layoutY="276.0" mnemonicParsing="false" text="virement bancaire" />
+                  <RadioButton fx:id="chequeRadioButton" layoutX="268.0" layoutY="276.0" mnemonicParsing="false" text="Chéque" />
+                  <Label layoutX="20.0" layoutY="269.0" text="Mode payement" />
+                  <TableView fx:id="tableview7" layoutX="446.0" layoutY="91.0" onSort="#handleConferenceSelection" prefHeight="330.0" prefWidth="475.0">
+                     <columns>
+                        <TableColumn fx:id="inst7" prefWidth="75.0" text="inst" />
+                        <TableColumn fx:id="titre7" prefWidth="75.0" text="titre" />
+                        <TableColumn fx:id="lieu7" prefWidth="75.0" text="lieu" />
+                        <TableColumn fx:id="topics7" prefWidth="75.0" text="topics" />
+                        <TableColumn fx:id="part" prefWidth="75.0" text="dateparti" />
+                        <TableColumn fx:id="mt7" prefWidth="108.800048828125" text="montant" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="454.0" layoutY="22.0" text="Conference" />
+                  <Label layoutX="23.0" layoutY="180.0" text="mot de passe" />
+                  <Label layoutX="24.0" layoutY="122.0" text="Email" />
+                  <Label layoutX="20.0" layoutY="67.0" text="Nom" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-407.0" layoutY="-13.0" prefHeight="52.0" prefWidth="1428.0" style="-fx-background-color: #B71C1C;">
+               <children>
+                  <Label layoutX="424.0" layoutY="17.0" text="Espace participant" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

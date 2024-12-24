@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StatetinfosController">
+   <children>
+      <TableView fx:id="tableview" layoutX="332.0" layoutY="70.0" prefHeight="146.0" prefWidth="375.0">
+        <columns>
+          <TableColumn fx:id="articleinfo" prefWidth="173.60003662109375" text="Titre Article" />
+          <TableColumn fx:id="auteurinfo" prefWidth="199.199951171875" text="Nom Auteur" />
+        </columns>
+      </TableView>
+      <Label layoutX="353.0" layoutY="247.0" text="total Articles acceptes" />
+      <TextField fx:id="totalArticlesField" layoutX="370.0" layoutY="286.0" />
+      <TextField fx:id="acceptedArticlesField" layoutX="370.0" layoutY="384.0" />
+      <Label layoutX="344.0" layoutY="32.0" text="Article accepte" />
+      <Label layoutX="353.0" layoutY="337.0" text="pourcentage des article acceptes" />
+      <AnchorPane layoutX="3.0" prefHeight="460.0" prefWidth="299.0" style="-fx-background-color: #B71C1C;">
+         <children>
+            <Label layoutX="100.0" layoutY="180.0" prefHeight="42.0" prefWidth="99.0" text="Stat et Info" textFill="#fcfafa">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

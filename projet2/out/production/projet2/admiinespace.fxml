@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="771.0" prefWidth="1373.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdmiinespaceController">
+   <children>
+      <TableView fx:id="TableView" layoutX="13.0" layoutY="120.0" onMouseClicked="#getitem" prefHeight="244.0" prefWidth="1350.0">
+         <columns>
+            <TableColumn fx:id="instColumn" prefWidth="77.59997177124023" text="institution" />
+            <TableColumn fx:id="presidentColumn" prefWidth="108.80001831054688" text="President" />
+            <TableColumn fx:id="titreColumn" prefWidth="91.20002746582031" text="Titre" />
+            <TableColumn fx:id="dateColumn" prefWidth="88.00006103515625" text="Date" />
+            <TableColumn fx:id="lieuColumn" prefWidth="91.20001220703125" text="Lieu" />
+            <TableColumn fx:id="topicsColumn" prefWidth="73.60003662109375" text="Topics" />
+            <TableColumn fx:id="membrecomscColumn" prefWidth="176.0" text="Membre comite scientifique" />
+            <TableColumn fx:id="membrecomorgColumn" prefWidth="192.0" text="Membre comité organisationel" />
+            <TableColumn fx:id="datelimsoumColumn" prefWidth="179.20001220703125" text="Date limite de soumission" />
+            <TableColumn fx:id="dateliminsColumn" prefWidth="152.0" text="Date limite d'inscription" />
+            <TableColumn fx:id="montantColumn" prefWidth="119.199951171875" text="Montant" />
+         </columns>
+      </TableView>
+      <Button layoutX="710.0" layoutY="492.0" mnemonicParsing="false" onAction="#cree" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: #0097B2;" text="Ajouter conference" textFill="WHITE" />
+      <Button fx:id="ajoutconf" layoutX="710.0" layoutY="402.0" mnemonicParsing="false" onAction="#ajoutconf" prefHeight="53.0" prefWidth="138.0" style="-fx-background-color: #0097B2;" text="Ajouter confirenciers" textFill="WHITE" />
+      <Button fx:id="consulterarticle" layoutX="896.0" layoutY="492.0" mnemonicParsing="false" onAction="#consulterarticle" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: #0097B2;" text="Consulter article" textFill="WHITE" />
+      <Button fx:id="mofifer" layoutX="890.0" layoutY="398.0" mnemonicParsing="false" onAction="#modifier" prefHeight="54.0" prefWidth="138.0" style="-fx-background-color: #0097B2;" text="Modifier" textFill="WHITE" />
+      <AnchorPane prefHeight="82.0" prefWidth="1374.0" style="-fx-background-color: #0097B2;">
+         <children>
+            <Label layoutX="395.0" layoutY="23.0" text="Espace Admin" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="14.0" layoutY="98.0" text="Consulter les conference" textFill="#0097b2">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Button fx:id="printButton" layoutX="820.0" layoutY="574.0" mnemonicParsing="false" onAction="#handlePrintButtonAction" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: #0097B2;" text="Imprimer" textFill="WHITE" />
+      <Button fx:id="actualiser" layoutX="25.0" layoutY="370.0" mnemonicParsing="false" onAction="#actualiser" style="-fx-background-color: #0097B2;" text="Actualiser" textFill="WHITE" />
+      <Label layoutX="26.0" layoutY="410.0" text="Institution" />
+      <TextField fx:id="instt" layoutX="113.0" layoutY="406.0" />
+      <Label layoutX="27.0" layoutY="462.0" text="President" />
+      <TextField fx:id="pres" layoutX="113.0" layoutY="464.0" />
+      <Label layoutX="31.0" layoutY="526.0" text="Titre" />
+      <TextField fx:id="titt" layoutX="113.0" layoutY="522.0" />
+      <Label layoutX="32.0" layoutY="582.0" text="Date" />
+      <DatePicker fx:id="dateee" layoutX="113.0" layoutY="576.0" />
+      <Label layoutX="33.0" layoutY="622.0" text="Lieu" />
+      <TextField fx:id="lieuu" layoutX="113.0" layoutY="618.0" />
+      <Label layoutX="33.0" layoutY="681.0" text="Montant" />
+      <TextField fx:id="mt" layoutX="113.0" layoutY="677.0" />
+      <Label layoutX="356.0" layoutY="410.0" text="Topic" />
+      <TextField fx:id="topp" layoutX="495.0" layoutY="415.0" />
+      <Label layoutX="341.0" layoutY="481.0" text="Comité scientifique" />
+      <TextField fx:id="sc" layoutX="495.0" layoutY="477.0" />
+      <Label layoutX="356.0" layoutY="535.0" text="Comité organisationnel" />
+      <TextField fx:id="org" layoutX="495.0" layoutY="531.0" />
+      <Label layoutX="348.0" layoutY="595.0" text="Date limite de soumission" />
+      <DatePicker fx:id="soum" layoutX="495.0" layoutY="589.0" />
+      <Label layoutX="350.0" layoutY="652.0" text="Date limite d'inscription" />
+      <DatePicker fx:id="inss" layoutX="495.0" layoutY="648.0" />
+   </children>
+</AnchorPane>

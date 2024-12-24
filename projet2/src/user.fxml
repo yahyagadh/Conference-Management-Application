@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="752.0" prefWidth="1105.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserController">
+   <children>
+      <TableView fx:id="tableview3" layoutX="21.0" layoutY="461.0" prefHeight="177.0" prefWidth="871.0" style="-fx-background-color: #00000;">
+         <columns>
+            <TableColumn fx:id="nom" prefWidth="75.0" text="nom" />
+            <TableColumn fx:id="prenom" prefWidth="225.60000610351562" text="prenom" />
+            <TableColumn fx:id="pays" prefWidth="159.99996948242188" text="pays" />
+            <TableColumn fx:id="instt1" prefWidth="160.7999267578125" text="institution" />
+            <TableColumn fx:id="pres" minWidth="0.0" prefWidth="265.60003662109375" text="titre de presentatuion" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tableview2" layoutX="21.0" layoutY="206.0" prefHeight="150.0" prefWidth="871.0">
+         <columns>
+            <TableColumn fx:id="instt" prefWidth="89.5999755859375" text="institution" />
+            <TableColumn fx:id="titre" prefWidth="68.0" text="titre" />
+            <TableColumn fx:id="date" prefWidth="139.2000274658203" text="date de conférence" />
+            <TableColumn fx:id="lieu" minWidth="8.79998779296875" prefWidth="124.800048828125" text="lieu de conférence" />
+            <TableColumn fx:id="topics" minWidth="4.79998779296875" prefWidth="88.79998779296875" text="topics" />
+            <TableColumn fx:id="soum" prefWidth="140.7999267578125" text="date de soumission" />
+            <TableColumn fx:id="ins" prefWidth="76.800048828125" text="dateins" />
+            <TableColumn fx:id="mt" prefWidth="161.60003662109375" text="montant" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutX="-5.0" layoutY="-22.0" prefHeight="106.0" prefWidth="1122.0" style="-fx-background-color: #0097B2;">
+         <children>
+            <Label layoutX="288.0" layoutY="40.0" text="Bienvenue dans l'espace d'utilisateur" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="21.0" layoutY="161.0" text="Consulter conférence" textFill="#0097b2">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="21.0" layoutY="416.0" prefHeight="18.0" prefWidth="184.0" text="Les conferenciers" textFill="#0097b2">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Label>
+      <Button layoutX="500.0" layoutY="107.0" mnemonicParsing="false" onAction="#soumettre" prefHeight="40.0" prefWidth="391.0" style="-fx-background-color: #0097B2;" text="Déposer un Article" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="stat" layoutX="53.0" layoutY="107.0" mnemonicParsing="false" onAction="#stat" prefHeight="40.0" prefWidth="414.0" style="-fx-background-color: #0097B2;" text="Statistiques des articles acceptés" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

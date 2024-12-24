@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="592.0" prefWidth="927.0" style="-fx-background-color: #0097B2;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ConsulterarticleController">
+   <children>
+      <TableView fx:id="tablearicle" layoutX="28.0" layoutY="91.0" prefHeight="200.0" prefWidth="833.0">
+        <columns>
+          <TableColumn fx:id="idArticleColumn" prefWidth="58.399991035461426" text="ID" />
+            <TableColumn fx:id="titreColumn" prefWidth="121.5999755859375" text="Titre" />
+            <TableColumn fx:id="nomAuteurColumn11" prefWidth="113.5999755859375" text="auteur" />
+            <TableColumn fx:id="mailAuteurColumn" prefWidth="162.4000244140625" text="Email de l'Auteur" />
+            <TableColumn fx:id="etatColumn" prefWidth="375.9999633789063" text="État" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tablecommiteee" layoutX="28.0" layoutY="336.0" prefHeight="200.0" prefWidth="868.0">
+        <columns>
+          <TableColumn fx:id="idcommitee" prefWidth="260.79999923706055" text="id" />
+            <TableColumn fx:id="mailcommite" prefWidth="386.4000549316406" text="Email" />
+          <TableColumn fx:id="nomcommite" prefWidth="220.80001831054688" text="nom" />
+        </columns>
+      </TableView>
+      <Button fx:id="affecter" layoutX="581.0" layoutY="28.0" mnemonicParsing="false" onAction="#affecter" prefHeight="39.0" prefWidth="266.0" style="-fx-background-color: #ffffff;" text="affecter" />
+      <Label layoutX="28.0" layoutY="63.0" text="Article" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="28.0" layoutY="306.0" text="Membres comite scinetifique" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="408.0" layoutY="14.0" text="Espace Admin" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

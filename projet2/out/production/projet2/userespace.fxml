@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="718.0" prefWidth="707.0" style="-fx-background-color: #0097B2;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserespaceController">
+   <children>
+      <TableView fx:id="tableview" layoutX="19.0" layoutY="55.0" prefHeight="549.0" prefWidth="666.0">
+        <columns>
+          <TableColumn fx:id="instt" prefWidth="75.0" text="inst" />
+          <TableColumn fx:id="titre" prefWidth="75.0" text="titre" />
+            <TableColumn fx:id="date" prefWidth="75.0" text="date" />
+            <TableColumn fx:id="lieu" prefWidth="75.0" text="lieu" />
+            <TableColumn fx:id="topics" prefWidth="75.0" text="topics" />
+            <TableColumn fx:id="soum" prefWidth="75.0" text="datesoum" />
+            <TableColumn fx:id="ins" prefWidth="105.59994506835938" text="dateins" />
+            <TableColumn fx:id="mt" prefWidth="108.800048828125" text="montant" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

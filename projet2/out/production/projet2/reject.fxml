@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RejectController">
+   <children>
+      <Button fx:id="acc" layoutX="157.0" layoutY="78.0" mnemonicParsing="false" onAction="#acc" prefHeight="34.0" prefWidth="187.0" style="-fx-background-color: #7ED957;" text="Accepter" />
+      <TableView fx:id="tab" layoutX="117.0" layoutY="128.0" prefHeight="206.0" prefWidth="545.0">
+        <columns>
+          <TableColumn fx:id="idarticle4" prefWidth="72.00003051757812" text="ID" />
+          <TableColumn fx:id="titart" prefWidth="162.3999481201172" text="Titre d'article" />
+            <TableColumn fx:id="auteur4" prefWidth="117.5999755859375" text="Auteur" />
+            <TableColumn fx:id="etat4" prefWidth="188.79998779296875" text="Etat de l'article" />
+        </columns>
+      </TableView>
+      <Button fx:id="rej" layoutX="390.0" layoutY="78.0" mnemonicParsing="false" onAction="#rej" prefHeight="34.0" prefWidth="187.0" style="-fx-background-color: #FF3131;" text="Refuser" />
+      <AnchorPane layoutX="-1.0" prefHeight="66.0" prefWidth="731.0" style="-fx-background-color: #0097B2;">
+         <children>
+            <Label layoutX="251.0" layoutY="19.0" prefHeight="27.0" prefWidth="269.0" text="Espace commite scientifique" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="4.0" layoutY="358.0" prefHeight="54.0" prefWidth="731.0" style="-fx-background-color: #0097B2;">
+         <children>
+            <Label layoutX="251.0" layoutY="19.0" prefHeight="27.0" prefWidth="269.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

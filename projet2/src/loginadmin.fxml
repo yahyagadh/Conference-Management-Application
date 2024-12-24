@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginadminController">
+    <children>
+        <Pane prefHeight="86.0" prefWidth="600.0" style="-fx-background-color: #0097B2;">
+         <children>
+                <Label layoutX="92.0" layoutY="26.0" prefHeight="35.0" prefWidth="469.0" text="Bienvenue : s'authentifier en tant que Admin" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+         </children>
+        </Pane>
+          <Label layoutX="36.0" layoutY="122.0" text="Nom" textFill="#0097b2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+          <TextField fx:id="nom" layoutX="181.0" layoutY="119.0" prefHeight="35.0" prefWidth="314.0" promptText="Enter votre identifiant" />
+          <Label layoutX="36.0" layoutY="208.0" text="Mot de passe" textFill="#0097b2">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+          <PasswordField fx:id="pwrd" layoutX="181.0" layoutY="204.0" prefHeight="35.0" prefWidth="313.0" promptText="Enter votre mot de passe" />
+      <Button fx:id="btn" layoutX="253.0" layoutY="285.0" mnemonicParsing="false" onAction="#login" prefHeight="54.0" prefWidth="154.0" text="S'authentifier" textFill="#0097b2" />
+      <Pane layoutY="389.0" prefHeight="22.0" prefWidth="600.0" style="-fx-background-color: #0097B2;">
+         <children>
+            <Label layoutX="92.0" layoutY="26.0" prefHeight="35.0" prefWidth="469.0" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
